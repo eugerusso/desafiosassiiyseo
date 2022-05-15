@@ -5,3 +5,4 @@ Volví a ver cuanto tardaba en cargar la página y fue un total de 161ms
 
 Mejoré los tittle de las páginas.
 Escribí meta desciption y meta keywords en cada página
+agregué archivo sitemap
