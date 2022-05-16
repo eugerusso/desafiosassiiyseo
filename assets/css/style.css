@@ -113,25 +113,26 @@ footer div a {
 /*Pagina Productos*/
 .galeria {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  padding: 5px;
 }
 
-.productos {
+.galeria .productos {
   margin: 5px;
 }
 
 @media screen and (min-width: 1024px) {
   .galeria {
+    display: flex;
     flex-flow: row wrap;
-    align-content: space-around;
-    justify-content: space-evenly;
+    justify-content: center;
   }
-  .productos {
+  .galeria .productos {
     width: 250px;
     box-shadow: 11px 10px 16px 0px rgba(101, 101, 101, 0.66);
     transition: transform 0.1s;
   }
-  .productos:hover {
+  .galeria .productoshover {
     transform: scale(1.5, 1.5);
   }
 }

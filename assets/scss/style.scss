@@ -91,29 +91,31 @@ footer{
 /*Pagina Productos*/
 .galeria{
     display: flex;
-    flex-flow: column nowrap;
+    flex-direction: column;
+    padding: 5px;
+
+    .productos{
+        margin: 5px;
+        
+    }
 }
-.productos{
-    margin: 5px;
-    
-}
+
 
 @media screen and (min-width:1024px){
     .galeria{
-        flex-flow: row wrap;
-        align-content: space-around;
-        justify-content: space-evenly;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: center;
+        .productos{
+            width: 250px;
+            box-shadow: 11px 10px 16px 0px rgba(101,101,101,0.66);
+            transition: transform 0.1s;
+            &hover{
+                transform: scale(1.5,1.5);
+            }
+        }
 
-    }
-    .productos{
-        width: 250px;
-        box-shadow: 11px 10px 16px 0px rgba(101,101,101,0.66);
-        transition: transform 0.1s;
-    }
-    .productos:hover{
-        transform: scale(1.5,1.5);
-    }
-    
+    }   
 }
 
 /*Pagina Eventos*/
